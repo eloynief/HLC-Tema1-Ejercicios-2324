@@ -33,6 +33,9 @@ public class Ejercicio5 {
 		//si el numero es positivo, es true
 		boolean res=num>=0;
 		
+		int i=0;
+		
+		
 		//separamos el string
 		String[] numeroLetra;
 		
@@ -42,16 +45,20 @@ public class Ejercicio5 {
 		
 		if(num>10) {
 			
-			for(int i=0;i<numeroLetra.length-1;i++) {
-				
-				if(!numeroLetra[i].equals(numeroLetra[numeroLetra.length-1-i])) {
-					
-					res=false;
-				}
-				//tambien podria poner directamente res=!numeroLetra[i].equals(numeroLetra[numeroLetra.length-1-i]);
-				
-				
+			while(i<numeroLetra.length-1&&!res) {
+				res=!numeroLetra[i].equals(numeroLetra[numeroLetra.length-1-i]);
 			}
+			
+//			for(int i=0;i<numeroLetra.length-1;i++) {
+//				
+//				if(!numeroLetra[i].equals(numeroLetra[numeroLetra.length-1-i])) {
+//					
+//					res=false;
+//				}
+//				//tambien podria poner directamente res=!numeroLetra[i].equals(numeroLetra[numeroLetra.length-1-i]);
+//				
+//				
+//			}
 			
 		}
 		
