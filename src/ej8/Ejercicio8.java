@@ -10,6 +10,7 @@ public class Ejercicio8 {
 	public static int fibonacci(int numero) throws Exception {
 		int res=1;
 		
+		//los necesitamos para 
 		int aux1=1;
 		
 		int aux2=1;
